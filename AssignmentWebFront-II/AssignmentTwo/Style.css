@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+.allcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  position: relative;
+
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalcontainer {
+  width: 40%;
+  margin: auto;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.searchcontainer {
+  width: 100%;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#inputtex {
+  padding: 0.5rem;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#seacrhbutt {
+  width: 8%;
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+
+.reslutscontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  /* border: 1px solid black; */
+}
+
+.drinkscontainer {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  padding: 0.7rem;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.cartcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 3px;
+
+  width: 20%;
+
+  /* border: 1px solid black; */
+}
+.sereeltext {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Js tags */
+
+.drinkscard {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgb(17, 65, 65),
+    rgb(32, 105, 105),
+    rgb(48, 145, 145)
+  );
+
+  overflow: hidden;
+  border-radius: 5px;
+  gap: 10px;
+  box-shadow: 3px 3px 0px 0px rgb(78, 75, 75);
+
+  max-width: 30%;
+  min-width: 30%;
+}
+
+.drinkscard img {
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.text-div {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  /* font-weight: bold; */
+}
+
+.butt-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.butt-div button {
+  padding: 0.4rem;
+  border-radius: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: white;
+}
+
+.addeddrink {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagecontainer {
+  width: 20%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.imagecontainer img {
+  object-fit: contain;
+  height: 3rem;
+}
+
+.namecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  /* border: 1px solid black; */
+}
+
+/* modals */
+
+.modalcard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.modalcard button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modalimagecontainer {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+#modalimage {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.modaltextcontainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.show {
+  opacity: 0.3;
+  pointer-events: none;
+}
